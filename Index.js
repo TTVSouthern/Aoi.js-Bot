@@ -8,4 +8,4 @@ token: "TOKEN", //Change this and go to discord.dev to get your token
 prefix: "!" //You can change this to whatever you want
 })
 bot.onMessage() //makes your bot be able to use commands or say stuff
-bot.loadCommands(`/commands`/)
+bot.loadCommands(`/commands`/) //Please create a folder called commands to use this
