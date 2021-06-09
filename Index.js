@@ -3,7 +3,7 @@ const Aoijs = require("aoi.js")
 const bot = new Aoijs.Bot({
 sharding: false, //if your bot is gonna become big
 shardAmount: 2, //Sharding is only necessary for bots in 2,000+ Guilds
-mobile: false, //change this to true or false if you want to 
+mobile: false, //change this to true or false if you want to - Discord Mobile Status
 token: "TOKEN", //Change this and go to discord.dev to get your token
 prefix: "!" //You can change this to whatever you want
 })
@@ -15,4 +15,9 @@ bot.status({
   text: "Change Me",
   type: "WATCHING", //If you change this to STREAMING add : url: "twitch.tv/yourusername"
   status: "idle" //offline + online + idle + dnd
+  time:  "12"
 })
+
+bot.command({
+  name: "ping",
+  code: `pong! $ping ms`
